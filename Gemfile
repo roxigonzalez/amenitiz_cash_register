@@ -66,3 +66,8 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+
+gem 'trailblazer-rails'
+gem 'haml', '~> 6.2.3'
+gem 'sass-embedded', '~> 1.69.5'
