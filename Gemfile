@@ -65,9 +65,15 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+  gem 'rails-controller-testing'
 end
 
 
-gem 'trailblazer-rails'
+gem "trailblazer", ">= 2.1.0"
+gem "trailblazer-rails"
 gem 'haml', '~> 6.2.3'
+gem 'sassc-rails'
 gem 'sass-embedded', '~> 1.69.5'
+gem 'bootstrap', '~> 5.3.2'
+gem 'jquery-rails'
+gem 'rubocop-rails', require: false

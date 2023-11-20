@@ -1,11 +1,16 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  price: 9.99
-  code: MyString
+  name: test
+  price: 5.00
+  code: SR1
 
 two:
-  name: MyString
-  price: 9.99
-  code: MyString
+  name: testb
+  price: 3.11
+  code: GR1
+
+three:
+  name: testc
+  price: 11.23
+  code: CF1

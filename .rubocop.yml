@@ -1,0 +1,24 @@
+require: rubocop-rails
+
+Style/Encoding:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 99
+
+Style/FrozenStringLiteralComment:
+  Enabled: False
+
+Metrics/BlockLength:
+  Enabled: False
+AllCops:
+  TargetRubyVersion: 2.7
+
+Style/Documentation:
+  Enabled: False
+
+Rails/CreateTableWithTimestamps:
+  Enabled: False
+
+Style/RescueStandardError:
+  Enabled: False

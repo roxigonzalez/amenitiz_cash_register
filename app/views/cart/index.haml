@@ -1,0 +1,39 @@
+= render "shared/header", count_cart: @count_cart
+
+.container
+  .row.mb-4
+    .col
+      %h1.h5
+        Cart Details
+  .row
+    .col-8
+      - @line_items.each do |product, q|
+        .row.mb-3
+          .col-md-12.col-lg-12.col-sm-12.col-xs-12
+            .card
+              .row 
+                .col-md-3
+                  = image_tag "#{product.code}.jpeg", class: "card-img-top"
+                .col-md-9
+                  .card-body
+                    .row 
+                      .col-md-6
+                        %h5.card-title
+                          = product.name
+                        %p.card-text
+                          = product.code
+                      .col-md-2
+                        %p.card-text
+                          €
+                          = product.price
+                      .col-md-2 
+                        x 
+                        = q
+    .col-4
+      .card
+        .card-body
+          %h5.card-title
+            Total
+          %p.card-text
+            €
+            = @total

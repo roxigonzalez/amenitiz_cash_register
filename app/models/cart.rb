@@ -1,6 +1,4 @@
-class Cart < ApplicationRecord
-  has_and_belongs_to_many :products
-  
+class Cart < ApplicationRecord  
   validates :total, presence: true
   validates :total, numericality: {
     greater_than: 0

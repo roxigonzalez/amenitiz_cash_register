@@ -1,0 +1,21 @@
+%header
+  .container 
+    .row 
+      .col-md-3.col-lg-3.col-sm-4.col-xs-12
+        = link_to image_tag("logo-amenitiz.svg", alt: "Logo", class: "logo", width: 200), root_path
+      .col-md-7.col-lg-8.col-sm-5.col-xs-12
+        %nav.navbar.navbar-expand-lg.align-items-lg-end
+          .container-fluid
+            .collapse.navbar-collapse.justify-content-end
+              %ul.navbar-nav.mb-2.mb-lg-0
+                %li.nav-item
+                  = link_to "Home", root_path, class: 'nav-link'
+                %li
+                  = link_to "About", root_path, class: 'nav-link' #about_path
+                %li
+                  = link_to "Contact", root_path, class: 'nav-link' #contact_path
+      .col-md-2.col-lg-1.col-sm-3.col-xs-12.align-self-center.text-end
+        = link_to "Cart" do 
+          = image_tag "cart.png", alt: "Cart", class: "cart", width: 30
+          %small.count_cart
+            = count_cart

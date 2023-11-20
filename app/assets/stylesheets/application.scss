@@ -1,0 +1,64 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap";
+
+
+$primary-color: #2F2105;
+$secondary-color: #F0BE39;
+$font: 'Poppins', sans-serif;
+
+:root {
+  --bs-primary: $primary-color; /* Replace 'your-color' with your desired primary color */
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins Bold';
+  src: url('fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins Light';
+  src: url('fonts/Poppins-Light.ttf') format('truetype');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+
+body {
+  font-family: $font;
+  /*
+  * Created with https://www.css-gradient.com
+  * Gradient link: https://www.css-gradient.com/?c1=f6ebda&c2=ffffff&gt=l&gd=dtt
+  */
+  background: #F6EBDA;
+  background: linear-gradient(180deg, #F6EBDA, #FFFFFF);
+  min-height: 100vh;
+}
+
+.btn-primary {
+  color: #FFD28F;
+  border-color: #FFD28F;
+  background-color: transparent;
+}
