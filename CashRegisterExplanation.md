@@ -35,6 +35,12 @@ Run seed to load products
 `rails s`
 Go to a browser `http://localhost:3000`
 
+
+#### Run tests
+Run 
+`rails test`
+
+
 ### About the Cart
 
 Is possible to add products to a cart, if you click the button `Add to Cart` located in each product. 
